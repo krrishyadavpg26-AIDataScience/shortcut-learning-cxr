@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Data and large outputs (re-downloadable / re-creatable)
+data/
+results/models/
+results/cams/
+results/logs/
+*.pt
+*.npz
+# trial / smoke-test output folders
+results_*/
+
+# Keep results/summary.md, summary.csv, all_runs.csv, figures/ and runs/ in git
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

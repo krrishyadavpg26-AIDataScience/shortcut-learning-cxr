@@ -1,0 +1,11 @@
+# Install PyTorch FIRST, from the CUDA 13.2 index (needed for RTX 50-series / Blackwell):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu132
+# Then:
+#   pip install -r requirements.txt
+torch>=2.7  # recommended: 2.15 with the CUDA 13.2 build
+torchvision>=0.22
+medmnist>=3.0.1
+numpy>=1.24
+scikit-learn>=1.3
+pandas>=2.0
+matplotlib>=3.7

@@ -1,0 +1,117 @@
+{
+  "name": "marker_random_rho0.9",
+  "seed": 0,
+  "rho": 0.9,
+  "method": "marker_random",
+  "metrics": {
+    "clean": {
+      "auc": 0.9923734385272848,
+      "acc": 0.9407051282051282,
+      "tpr": 1.0,
+      "tnr": 0.8418803418803419,
+      "marker_rate": 0.0
+    },
+    "aligned": {
+      "auc": 0.9926254657023887,
+      "acc": 0.9407051282051282,
+      "tpr": 1.0,
+      "tnr": 0.8418803418803419,
+      "marker_rate": 0.6009615384615384
+    },
+    "flipped": {
+      "auc": 0.9912995836072759,
+      "acc": 0.9407051282051282,
+      "tpr": 1.0,
+      "tnr": 0.8418803418803419,
+      "marker_rate": 0.375
+    },
+    "balanced": {
+      "auc": 0.9918584264738112,
+      "acc": 0.9407051282051282,
+      "tpr": 0.9974358974358974,
+      "tnr": 0.8461538461538461,
+      "marker_rate": 0.5192307692307693,
+      "group_acc": {
+        "normal_nomarker": 0.860655737704918,
+        "normal_marker": 0.8303571428571429,
+        "pneumonia_nomarker": 1.0,
+        "pneumonia_marker": 0.9952830188679245
+      },
+      "worst_group_acc": 0.8303571428571429,
+      "delta_tpr": -0.004716981132075526
+    },
+    "shortcut_gap": 0.0013258820951128625
+  },
+  "gradcam": {
+    "mar": 0.03568850520611909,
+    "area_frac": 0.03515625,
+    "enrichment": 1.0151397036407208,
+    "n_scored": 609
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.146300536274163,
+      "val_auc": 0.9982862039417308
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.05875566556176191,
+      "val_auc": 0.9974959535370848
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.0356544014557044,
+      "val_auc": 0.9988384271160621
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.03554412463051643,
+      "val_auc": 0.9976958964105495
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.023303609053361384,
+      "val_auc": 0.9987432162239359
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.015003393693789903,
+      "val_auc": 0.9992002285061411
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.01122441244693022,
+      "val_auc": 0.998743216223936
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.012891045595284239,
+      "val_auc": 0.9990288489003142
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.00609508921537064,
+      "val_auc": 0.9991811863277158
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.006061356625469843,
+      "val_auc": 0.9991431019708654
+    }
+  ],
+  "extra": {},
+  "time_sec": 84.1,
+  "config": {
+    "size": 128,
+    "epochs": 10,
+    "batch_size": 64,
+    "lr": 0.0001,
+    "weight_decay": 0.0001,
+    "jtt_epochs": 2,
+    "jtt_upweight": 20.0,
+    "cam_layer": "layer3",
+    "fake_data": false,
+    "no_pretrained": false
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "name": "erm_rho1.0",
+  "seed": 0,
+  "rho": 1.0,
+  "method": "erm",
+  "metrics": {
+    "clean": {
+      "auc": 0.9433158010081086,
+      "acc": 0.5753205128205128,
+      "tpr": 0.3282051282051282,
+      "tnr": 0.9871794871794872,
+      "marker_rate": 0.0
+    },
+    "aligned": {
+      "auc": 1.0,
+      "acc": 0.9951923076923077,
+      "tpr": 1.0,
+      "tnr": 0.9871794871794872,
+      "marker_rate": 0.625
+    },
+    "flipped": {
+      "auc": 0.009850975235590625,
+      "acc": 0.20993589743589744,
+      "tpr": 0.3282051282051282,
+      "tnr": 0.012820512820512775,
+      "marker_rate": 0.375
+    },
+    "balanced": {
+      "auc": 0.6641737891737891,
+      "acc": 0.6041666666666666,
+      "tpr": 0.6666666666666666,
+      "tnr": 0.5,
+      "marker_rate": 0.4935897435897436,
+      "group_acc": {
+        "normal_nomarker": 0.9743589743589743,
+        "normal_marker": 0.02564102564102564,
+        "pneumonia_nomarker": 0.34673366834170855,
+        "pneumonia_marker": 1.0
+      },
+      "worst_group_acc": 0.02564102564102564,
+      "delta_tpr": 0.6532663316582914
+    },
+    "shortcut_gap": 0.9901490247644094
+  },
+  "gradcam": {
+    "mar": 0.2819885312672856,
+    "area_frac": 0.03515625,
+    "enrichment": 8.021007111602792,
+    "n_scored": 614
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.072413359416426,
+      "val_auc": 1.0
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.001457848483870659,
+      "val_auc": 1.0
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.0005180213598221122,
+      "val_auc": 1.0
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.00032677585601303396,
+      "val_auc": 1.0
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.000463420137434746,
+      "val_auc": 1.0
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.0007306750082141248,
+      "val_auc": 1.0
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.00023745305476618808,
+      "val_auc": 1.0
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.0002471622310661115,
+      "val_auc": 0.9999999999999999
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.00020489397955203418,
+      "val_auc": 1.0
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.0002282574810939283,
+      "val_auc": 1.0
+    }
+  ],
+  "extra": {},
+  "time_sec": 82.1,
+  "config": {
+    "size": 128,
+    "epochs": 10,
+    "batch_size": 64,
+    "lr": 0.0001,
+    "weight_decay": 0.0001,
+    "jtt_epochs": 2,
+    "jtt_upweight": 20.0,
+    "cam_layer": "layer3",
+    "fake_data": false,
+    "no_pretrained": false
+  }
+}
