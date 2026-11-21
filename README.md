@@ -19,7 +19,7 @@ Key papers: Sourget et al., *Mask of Truth*, J. Imaging Inform. Med. 2025
 ## Quick start (Windows 11, NVIDIA RTX 50-series)
 
 ```powershell
-git clone https://github.com/<your-username>/shortcut-learning-cxr.git
+git clone https://github.com/krrishyadavpg26-AIDataScience/shortcut-learning-cxr.git
 cd shortcut-learning-cxr
 py -3.11 -m venv .venv
 .\.venv\Scripts\Activate.ps1
