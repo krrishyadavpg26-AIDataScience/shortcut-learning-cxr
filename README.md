@@ -107,6 +107,14 @@ docs/GENAI_USAGE.md  log of generative-AI use (course requirement)
 --cam-layer layer3  --size 128  --batch-size 64  --only <config names>  --save-models
 ```
 
+## Related implementations
+
+| Repository | What it is | How this project relates |
+|---|---|---|
+| [MedMNIST/MedMNIST](https://github.com/MedMNIST/MedMNIST) | Official MedMNIST dataset package and benchmarks | Used directly (`medmnist` package) to load PneumoniaMNIST at 128 px |
+| [jacobgil/pytorch-grad-cam](https://github.com/jacobgil/pytorch-grad-cam) | Widely used PyTorch library for Grad-CAM and related methods | Reference for `shortcut/gradcam.py`, which implements Grad-CAM directly so the marker-attribution score can be computed from the raw heatmap |
+| [anniesch/jtt](https://github.com/anniesch/jtt) | Official code for Just Train Twice (Liu et al., ICML 2021) | Reference for the JTT mitigation in `shortcut/train.py` (2-epoch stage 1, error set up-weighted ×20 or ×50) |
+
 ## Data and licence
 
 PneumoniaMNIST (Yang et al., *Scientific Data* 2023; source images Kermany et al., *Cell* 2018) is
