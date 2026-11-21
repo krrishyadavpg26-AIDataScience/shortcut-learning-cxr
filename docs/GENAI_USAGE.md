@@ -15,7 +15,7 @@ prompts and context. This file records how they were used, so the contribution i
 | 8 | 2026-11-13 | Claude | Interpretation + speaker notes | "Provide the interpretation of the results and speaker notes of the slides. Also mention my contribution and how it will help further research" | Reviewed the interpretation and notes before presenting |
 | 9 | 2026-11-21 | Singularity Alpha | Run diagnosis | Asked it to run JTT with up-weight 50; it traced a segfault to the GPU being switched off (Eco mode) | Switched GPU mode back; verified with nvidia-smi and a torch check; results/ untouched |
 | 10 | 2026-11-21 | Singularity Alpha | JTT analysis + experiment | Asked for per-seed JTT error sets by group and the up-weight 50 vs 20 comparison | Checked group counts sum to error-set sizes; corrected its claim that every metric worsened (ΔTPR and Grad-CAM improved slightly) |
-| 11 | 2026-11-21 | Claude | GitHub + proposal | Asked how to push to GitHub; asked to fit the proposal on one page | Fixed the remote URL error and pushed; proposal checked as one A4 page |
+
 
 ## My own contributions
 
